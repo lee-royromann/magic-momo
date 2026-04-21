@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Logs und temporaere Dateien
+*.log
+*.tmp
+
+# Projektinterner Archivbereich
+_archive/
+
+sitemap.xml
+robots.txt
+.htaccess
