@@ -1,7 +1,5 @@
 # Magic Momo
 
----
-
 <p align="center">
   <img src="assets/img/magic-momo.webp" alt="Magic Momo Foodtruck" width="960">
 </p>
