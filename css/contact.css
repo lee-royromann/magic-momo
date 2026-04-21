@@ -1,0 +1,135 @@
+.contact-section {
+    background-color: #FFFBF5;
+    padding-bottom: 200px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.contact-card {
+    background-color: #FFFFFF;
+    padding: 40px 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card .contact-actions {
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    text-align: center;
+}
+
+.contact-list li {
+    margin-bottom: 16px;
+    color: #424242;
+    line-height: 1.7;
+}
+
+.contact-list strong {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.opening-hours-label {
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.opening-hours {
+    margin-bottom: 20px;
+}
+
+.opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opening-hours li span:first-child {
+    font-weight: 600;
+    color: #212121;
+}
+
+.opening-hours li span:last-child {
+    color: #424242;
+}
+
+.contact-text {
+    color: #424242;
+    line-height: 1.7;
+}
+
+.payment-info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #EEEEEE;
+    font-size: 0.95rem;
+}
+
+.contact-actions {
+    margin-top: 24px;
+}
+
+.qr-code-link {
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.qr-code-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.qr-code-label {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.qr-code-link:hover .qr-code-label {
+    color: #FFC107;
+    transform: translateY(-2px);
+}

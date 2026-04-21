@@ -1,0 +1,119 @@
+.footer {
+    background-color: #212121;
+    color: #FFFFFF;
+    padding: 32px 0 16px;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-brand {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+.footer-tagline {
+    color: #BDBDBD;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.footer-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #E1306C 0%, #F77737 50%, #FCAF45 100%);
+    border-radius: 24px;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(225, 48, 108, 0.3);
+    white-space: nowrap;
+}
+
+.footer-instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(225, 48, 108, 0.4);
+}
+
+.footer-instagram svg {
+    flex-shrink: 0;
+}
+
+.footer-links-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.footer-links-row a {
+    color: #BDBDBD;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.footer-links-row a:hover {
+    color: #FFC107;
+}
+
+.footer-copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 24px;
+}
+
+.footer-copyright p {
+    color: #757575;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-credit {
+    font-size: 0.65rem !important;
+    color: #616161 !important;
+    margin: 0 !important;
+}
+
+.footer-credit a {
+    color: #9E9E9E;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-credit a:hover {
+    color: #FFC107;
+}
