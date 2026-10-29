@@ -1,5 +1,5 @@
 .impressum-section {
-    background-color: #FAFAFA;
+    background-color: var(--color-cream);
     padding: 140px 0 80px;
     min-height: calc(100vh - 120px);
     flex: 1;
@@ -26,7 +26,7 @@
     color: #212121;
     margin-bottom: 24px;
     padding-bottom: 12px;
-    border-bottom: 2px solid #FFC107;
+    border-bottom: 2px solid var(--color-saffron);
 }
 
 .info-list {
@@ -103,7 +103,7 @@
 }
 
 .impressum-card .contact-link:hover {
-    background: #FFC107;
+    background: var(--color-saffron);
     color: #212121;
 }
 
@@ -165,12 +165,16 @@
 }
 
 .impressum-block a {
-    color: #FFC107;
-    font-weight: 500;
+    color: var(--color-text);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--color-saffron);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 
 .impressum-block a:hover {
-    color: #FFD54F;
+    text-decoration-color: var(--color-ink);
 }
 
 .impressum-block ul {

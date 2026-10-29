@@ -12,8 +12,8 @@
     <!-- Primary Meta Tags -->
     <title>Magic Momo &amp; More | Foodtruck Kanton Zürich | Tibetische Momos & Asiatische Spezialitäten</title>
     <meta name="title" content="Magic Momo &amp; More | Foodtruck Kanton Zürich | Tibetische Momos & Asiatische Spezialitäten">
-    <meta name="description" content="Authentische tibetische Momos, Shabaley, Japanese Curry, Korean Fried Chicken. Magic Momo & More | Foodtruck im Kanton Zürich – Frisch zubereitet, authentisch und lecker. Rindfleisch Momo, Vegi Momo, Edamame, Summer Rolle.">
-    <meta name="keywords" content="Momos Kanton Zürich, Tibetische Momos Zürich, Foodtruck Zürich, Foodtruck Winterthur, Asiatisches Essen Kanton Zürich, Rindfleisch Momo, Vegi Momo, Veggie Momo, Shabaley, Japanese Curry, Korean Fried Chicken, Edamame, Summer Rolle, Tibetische Küche, Asiatische Spezialitäten, Street Food Zürich, Food Truck Schweiz, Magic Momo & More, Authentisch Tibetisch">
+    <meta name="description" content="Authentische tibetische Momos – gedämpft, als C-Momo, Jhol-Momo oder Khote-Momo – dazu Himalaya Curry, Korean Fried Chicken, Shabaley und mehr. Magic Momo & More | Foodtruck im Kanton Zürich – Frisch zubereitet, authentisch und lecker.">
+    <meta name="keywords" content="Momos Kanton Zürich, Tibetische Momos Zürich, Foodtruck Zürich, Foodtruck Winterthur, Asiatisches Essen Kanton Zürich, Rindfleisch Momo, Vegi Momo, Veggie Momo, Gedämpfte Momo, C-Momo, Jhol-Momo, Khote-Momo, Himalaya Curry, Himalaya-Küche, Gebratener Reis, Gebratene Nudeln, Shabaley, Japanese Curry, Korean Fried Chicken, Edamame, Summer Rolle, Tibetische Küche, Asiatische Spezialitäten, Street Food Zürich, Food Truck Schweiz, Magic Momo & More, Authentisch Tibetisch">
     <meta name="author" content="Magic Momo & More">
     <meta name="robots" content="index, follow">
     <meta name="language" content="German">
@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
     
     <!-- Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
@@ -60,7 +60,7 @@
       "url": "https://magic-momo.ch",
       "telephone": "+41764464231",
       "email": "jigmeylosal2@gmail.com",
-      "priceRange": "CHF 3-20",
+      "priceRange": "CHF 3-22",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Talackerstrasse 98",
@@ -115,145 +115,233 @@
         "hasMenuSection": [
           {
             "@type": "MenuSection",
-                        "name": "Menu",
+            "name": "Momo",
             "hasMenuItem": [
               {
                 "@type": "MenuItem",
-                                "name": "Rindfleisch Momo 5 Stück",
-                                "description": "Traditionelle tibetische Teigtaschen mit würziger Rindfleischfüllung, gedämpft und mit hausgemachter Sauce serviert.",
+                "name": "Gedämpfte Momo 6 Stück",
+                "description": "Frisch gedämpfte tibetische Teigtaschen mit würziger Dip-Sauce. Wahlweise mit Rind oder Vegi.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "12.90",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Gedämpfte Momo 10 Stück",
+                "description": "Frisch gedämpfte tibetische Teigtaschen mit würziger Dip-Sauce. Wahlweise mit Rind oder Vegi.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "21.50",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "C-Momo",
+                "description": "Gebratene Momos in pikanter Chili-Sauce. Wahlweise mit Rind oder Vegi.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "19.50",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Jhol-Momo",
+                "description": "Momos in würziger Tomaten-Sesam-Brühe. Wahlweise mit Rind oder Vegi.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "19.50",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Khote-Momo",
+                "description": "Einseitig goldbraun gebratene Momos. Wahlweise mit Rind oder Vegi.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "19.50",
+                  "priceCurrency": "CHF"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "More than Momo",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Gebratener Reis Vegi",
+                "description": "Frisch gebratener Reis mit Gemüse.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "15.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Gebratener Reis mit Poulet",
+                "description": "Frisch gebratener Reis mit Gemüse.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "18.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Gebratene Nudeln Vegi",
+                "description": "Gebratene Nudeln mit knackigem Gemüse.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "15.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Gebratene Nudeln mit Poulet",
+                "description": "Gebratene Nudeln mit knackigem Gemüse.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "18.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Korean Fried Chicken mit Reis",
+                "description": "Knusprig frittiertes Hähnchen, süss-scharf glasiert. Wahlweise mit duftendem Reis.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "18.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Korean Fried Chicken ohne Reis",
+                "description": "Knusprig frittiertes Hähnchen, süss-scharf glasiert. Wahlweise mit duftendem Reis.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "15.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Himalaya Curry mit Poulet",
+                "description": "Nach Himalaya-Art gekocht und mit Reis serviert.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "19.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Himalaya Curry mit Rind",
+                "description": "Nach Himalaya-Art gekocht und mit Reis serviert.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "22.00",
+                  "priceCurrency": "CHF"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Weitere Spezialitäten",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Shabaley",
+                "description": "Knusprig gebratene tibetische Teigtasche mit herzhafter Rindfleisch Füllung. Ein authentischer Street-Food-Klassiker.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "5.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Edamame",
+                "description": "Leicht gesalzene japanische Sojabohnen. Der perfekte gesunde Snack.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "5.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Japanese Curry Reis mit Chicken Katsu",
+                "description": "Aromatisches japanisches Curry mit knusprig paniertem Hähnchen und Reis. Herzhaft und sättigend.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "20.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Japanese Curry Reis",
+                "description": "Aromatisches japanisches Curry mit Reis und Gemüse. Eine vollwertige vegetarische Option.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "15.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Reis",
+                "description": "Perfekt gegarter, duftender Reis. Die ideale Beilage zu allen Hauptgerichten.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "3.00",
+                  "priceCurrency": "CHF"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Summer Rolle",
+                "description": "Frische Reispapierrollen gefüllt mit knackigem Gemüse und Kräutern. Leicht und erfrischend.",
                 "offers": {
                   "@type": "Offer",
                   "price": "10.00",
                   "priceCurrency": "CHF"
                 }
-              },
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Getränke",
+            "hasMenuItem": [
               {
                 "@type": "MenuItem",
-                                "name": "Rindfleisch Momo 8 Stück",
-                                "description": "Traditionelle tibetische Teigtaschen mit würziger Rindfleischfüllung, gedämpft und mit hausgemachter Sauce serviert.",
+                "name": "Softgetränke",
+                "description": "Diverse Softgetränke zur Auswahl.",
                 "offers": {
                   "@type": "Offer",
-                                    "price": "15.00",
+                  "price": "3.50",
                   "priceCurrency": "CHF"
                 }
               },
               {
                 "@type": "MenuItem",
-                                "name": "Rindfleisch Momo 10 Stück",
-                                "description": "Traditionelle tibetische Teigtaschen mit würziger Rindfleischfüllung, gedämpft und mit hausgemachter Sauce serviert.",
+                "name": "Mineralwasser",
+                "description": "Mit oder ohne Kohlensäure.",
                 "offers": {
                   "@type": "Offer",
-                                    "price": "18.00",
-                  "priceCurrency": "CHF"
-                }
-              },
-              {
-                "@type": "MenuItem",
-                                "name": "Vegi Momo 5 Stück",
-                                "description": "Mit frischem Gemüse und Kräutern gefüllte Teigtaschen. Leicht, aromatisch und vollkommen pflanzlich.",
-                "offers": {
-                  "@type": "Offer",
-                                    "price": "10.00",
-                  "priceCurrency": "CHF"
-                }
-              },
-              {
-                "@type": "MenuItem",
-                                "name": "Vegi Momo 8 Stück",
-                                "description": "Mit frischem Gemüse und Kräutern gefüllte Teigtaschen. Leicht, aromatisch und vollkommen pflanzlich.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "15.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Vegi Momo 10 Stück",
-                                "description": "Mit frischem Gemüse und Kräutern gefüllte Teigtaschen. Leicht, aromatisch und vollkommen pflanzlich.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "18.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Shabaley",
-                                "description": "Knusprig gebratene tibetische Teigtasche mit herzhafter Rindfleisch Füllung. Ein authentischer Street-Food-Klassiker.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "5.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Edamame",
-                                "description": "Leicht gesalzene japanische Sojabohnen. Der perfekte gesunde Snack.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "5.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Japanese Curry Reis mit Chicken Katsu",
-                                "description": "Aromatisches japanisches Curry mit knusprig paniertem Hähnchen und Reis. Herzhaft und sättigend.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "20.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Japanese Curry Reis",
-                                "description": "Aromatisches japanisches Curry mit Reis und Gemüse. Eine vollwertige vegetarische Option.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "15.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Korean Fry Chicken ohne Reis",
-                                "description": "Knusprig frittiertes Hähnchen in würziger koreanischer Glasur. Ein absoluter Geschmackshit.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "15.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Korean Fry Chicken mit Reis",
-                                "description": "Knusprig frittiertes Hähnchen in würziger koreanischer Glasur, serviert mit duftendem Reis.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "18.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Reis",
-                                "description": "Perfekt gegarter, duftender Reis. Die ideale Beilage zu allen Hauptgerichten.",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "3.00",
-                                    "priceCurrency": "CHF"
-                                }
-                            },
-                            {
-                                "@type": "MenuItem",
-                                "name": "Summer Rolle",
-                                "description": "Frische Reispapierrollen gefüllt mit knackigem Gemüse und Kräutern. Leicht und erfrischend.",
-                "offers": {
-                  "@type": "Offer",
-                                    "price": "10.00",
+                  "price": "3.50",
                   "priceCurrency": "CHF"
                 }
               }
@@ -273,7 +361,7 @@
         <div class="container">
             <nav class="nav">
                 <div class="logo">
-                    <img src="assets/logo/logo.webp" alt="Magic Momo & More Logo" class="logo-icon">
+                    <img src="assets/logo/logo_rund.webp" alt="Magic Momo & More Logo" class="logo-icon">
                     <span class="logo-text">Magic Momo & More</span>
                 </div>
                 <ul id="primary-navigation" class="nav-menu">
@@ -293,14 +381,43 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Authentische Tibetische Momos und mehr in Zürich</h1>
-            <p class="hero-subtitle">Mobiler Foodtruck mit asiatischen Spezialitäten: Rindfleisch Momos, Vegi Momos, Shabaley, Japanese Curry und Korean Fried Chicken</p>
-            <div class="hero-actions">
-                <a href="#menu" class="btn btn-primary"><span class="btn-text-full">Menu ansehen</span><span class="btn-text-short">Menu</span></a>
-                <a href="#contact" class="btn btn-secondary"><span class="btn-text-full">Kontakt aufnehmen</span><span class="btn-text-short">Kontakt</span></a>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Foodtruck · Kanton Zürich</p>
+                <h1 class="hero-title">Tibetische Momos &amp; <span>Himalaya-Küche</span></h1>
+                <p class="hero-subtitle">Von Hand gemacht, frisch gedämpft oder goldbraun gebraten – direkt aus dem gelben Foodtruck. Dazu Himalaya Curry, Korean Fried Chicken und mehr.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-dark">Menu ansehen</a>
+                    <a href="#contact" class="btn btn-outline"><span class="btn-text-full">Fahrplan &amp; Kontakt</span><span class="btn-text-short">Fahrplan</span></a>
+                </div>
+                <ul class="hero-facts">
+                    <li>Rind oder Vegi</li>
+                    <li>Frisch von Hand</li>
+                    <li>Karte · TWINT · Bar</li>
+                </ul>
             </div>
+        </div>
+        <div class="hero-visual">
+            <img src="assets/img/momo_teller.webp" alt="Fünf gedämpfte Momos mit schwarzem Sesam auf einem hellen Teller" class="hero-plate" width="560" height="599">
+            <svg class="hero-badge" viewBox="0 0 200 200" role="img" aria-label="Der Klassiker: 6 gedämpfte Momo für CHF 12.90">
+                <defs>
+                    <path id="hero-badge-arc-top" d="M30,100 A70,70 0 0,1 170,100"/>
+                    <path id="hero-badge-arc-bottom" d="M22,100 A78,78 0 0,0 178,100"/>
+                </defs>
+                <circle class="hero-badge-disc" cx="100" cy="100" r="100"/>
+                <circle class="hero-badge-ring" cx="100" cy="100" r="90"/>
+                <circle class="hero-badge-dot" cx="20" cy="100" r="3"/>
+                <circle class="hero-badge-dot" cx="180" cy="100" r="3"/>
+                <text class="hero-badge-label" text-anchor="middle"><textPath href="#hero-badge-arc-top" startOffset="50%">DER KLASSIKER</textPath></text>
+                <text class="hero-badge-price" x="100" y="117" text-anchor="middle">12.90</text>
+                <text class="hero-badge-note" text-anchor="middle"><textPath href="#hero-badge-arc-bottom" startOffset="50%">6 GEDÄMPFTE MOMO</textPath></text>
+            </svg>
+        </div>
+        <div class="wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path class="wave-fill" d="M0,64 C240,8 520,8 760,52 C1000,96 1220,100 1440,36 L1440,120 L0,120 Z"/>
+                <path class="wave-line" d="M0,84 C240,28 520,28 760,72 C1000,116 1220,120 1440,56" vector-effect="non-scaling-stroke"/>
+            </svg>
         </div>
     </section>
 
@@ -308,138 +425,237 @@
     <section id="menu" class="menu-section">
         <div class="container">
             <div class="section-header">
+                <p class="section-eyebrow">Frisch aus dem Truck</p>
                 <h2 class="section-title">Mein Menu</h2>
-                <p class="section-subtitle">Entdecke authentische tibetische Momos, Shabaley, Japanese Curry und Korean Fried Chicken</p>
+                <p class="section-subtitle">Tibetische Momos in vier Varianten, Himalaya Curry und weitere asiatische Spezialitäten.</p>
             </div>
-            
-            <div class="menu-grid">
-                <!-- Menu Card 1 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/momo_rind.webp" alt="Rindfleisch Momo">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Rindfleisch Momo</h3>
-                        <p class="card-description">Traditionelle tibetische Teigtaschen mit würziger Rindfleischfüllung, gedämpft und mit hausgemachter Sauce serviert.</p>
-                        <div class="price-options">
-                            <span class="price-option"><span>5 Stück</span> <strong>10.– CHF</strong></span>
-                            <span class="price-option"><span>8 Stück</span> <strong>15.– CHF</strong></span>
-                            <span class="price-option"><span>10 Stück</span> <strong>18.– CHF</strong></span>
+
+            <nav class="menu-tabs" aria-label="Menu-Kategorien">
+                <a href="#menu-momo">Momo</a>
+                <a href="#menu-more">More than Momo</a>
+                <a href="#menu-spezialitaeten">Weitere Spezialitäten</a>
+                <a href="#menu-getraenke">Getränke</a>
+            </nav>
+
+            <div class="menu-layout">
+                <!-- Kategorie: Momo -->
+                <div class="menu-category menu-category-momo" id="menu-momo">
+                    <h3 class="menu-category-title">Momo</h3>
+                    <article class="menu-feature">
+                        <div class="menu-feature-image">
+                            <img src="assets/img/momo_rind.webp" alt="Gedämpfte Momo mit Dip-Sauce" loading="lazy">
                         </div>
-                    </div>
-                </article>
-
-                <!-- Menu Card 2 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/momo_vegi.webp" alt="Vegi Momo">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Vegi Momo</h3>
-                        <p class="card-description">Mit frischem Gemüse und Kräutern gefüllte Teigtaschen. Leicht, aromatisch und vollkommen pflanzlich.</p>
-                        <div class="price-options">
-                            <span class="price-option"><span>5 Stück</span> <strong>10.– CHF</strong></span>
-                            <span class="price-option"><span>8 Stück</span> <strong>15.– CHF</strong></span>
-                            <span class="price-option"><span>10 Stück</span> <strong>18.– CHF</strong></span>
+                        <div class="menu-feature-body">
+                            <div>
+                                <p class="menu-label">Der Klassiker</p>
+                                <h4 class="menu-item-name">Gedämpfte Momo</h4>
+                                <p class="menu-item-description">Frisch gedämpfte tibetische Teigtaschen mit würziger Dip-Sauce.</p>
+                                <p class="menu-item-choice">Rind oder Vegi</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><span>6 Stück</span> <strong>12.90</strong></span>
+                                <span class="menu-price"><span>10 Stück</span> <strong>21.50</strong></span>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">C-Momo</h4>
+                                <p class="menu-item-description">Gebratene Momos in pikanter Chili-Sauce.</p>
+                                <p class="menu-item-choice">Rind oder Vegi</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>19.50</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Jhol-Momo</h4>
+                                <p class="menu-item-description">Momos in würziger Tomaten-Sesam-Brühe.</p>
+                                <p class="menu-item-choice">Rind oder Vegi</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>19.50</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Khote-Momo</h4>
+                                <p class="menu-item-description">Einseitig goldbraun gebratene Momos.</p>
+                                <p class="menu-item-choice">Rind oder Vegi</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>19.50</strong></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-                <!-- Menu Card 3 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/shabaley.webp" alt="Shabaley">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Shabaley</h3>
-                        <p class="card-description">Knusprig gebratene tibetische Teigtasche mit herzhafter Rindfleisch Füllung. Ein authentischer Street-Food-Klassiker.</p>
-                        <span class="card-price"><span>1 Stück</span> <strong>5.– CHF</strong></span>
-                    </div>
-                </article>
+                <!-- Kategorie: More than Momo -->
+                <div class="menu-category menu-category-more" id="menu-more">
+                    <h3 class="menu-category-title">More than Momo</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Gebratener Reis</h4>
+                                <p class="menu-item-description">Frisch gebratener Reis mit Gemüse.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><span>Vegi</span> <strong>15.–</strong></span>
+                                <span class="menu-price"><span>mit Poulet</span> <strong>18.–</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Gebratene Nudeln</h4>
+                                <p class="menu-item-description">Gebratene Nudeln mit knackigem Gemüse.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><span>Vegi</span> <strong>15.–</strong></span>
+                                <span class="menu-price"><span>mit Poulet</span> <strong>18.–</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Korean Fried Chicken</h4>
+                                <p class="menu-item-description">Knusprig frittiertes Hähnchen, süss-scharf glasiert.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><span>mit Reis</span> <strong>18.–</strong></span>
+                                <span class="menu-price"><span>ohne Reis</span> <strong>15.–</strong></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <article class="menu-feature">
+                        <div class="menu-feature-body">
+                            <div>
+                                <p class="menu-label">Meine Spezialität</p>
+                                <h4 class="menu-item-name">Himalaya Curry</h4>
+                                <p class="menu-item-description">Nach Himalaya-Art gekocht und mit Reis serviert.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><span>Poulet</span> <strong>19.–</strong></span>
+                                <span class="menu-price"><span>Rind</span> <strong>22.–</strong></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Menu Card 4 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/edamame.webp" alt="Edamame">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Edamame</h3>
-                        <p class="card-description">Leicht gesalzene japanische Sojabohnen. Der perfekte gesunde Snack.</p>
-                        <span class="card-price"><span>1 Portion</span> <strong>5.– CHF</strong></span>
-                    </div>
-                </article>
+                <!-- Kategorie: Weitere Spezialitäten -->
+                <div class="menu-category menu-category-special" id="menu-spezialitaeten">
+                    <h3 class="menu-category-title">Weitere Spezialitäten</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Shabaley</h4>
+                                <p class="menu-item-description">Knusprig gebratene tibetische Teigtasche mit herzhafter Rindfleisch-Füllung.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><span>1 Stück</span> <strong>5.–</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Edamame</h4>
+                                <p class="menu-item-description">Leicht gesalzene japanische Sojabohnen.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>5.–</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Japanese Curry Reis mit Chicken Katsu</h4>
+                                <p class="menu-item-description">Aromatisches japanisches Curry mit knusprig paniertem Hähnchen und Reis.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>20.–</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Japanese Curry Reis</h4>
+                                <p class="menu-item-description">Aromatisches japanisches Curry mit Reis und Gemüse. Vegetarisch.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>15.–</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Summer Rolle</h4>
+                                <p class="menu-item-description">Frische Reispapierrollen mit knackigem Gemüse und Kräutern.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>10.–</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Reis</h4>
+                                <p class="menu-item-description">Duftender Reis als Beilage.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>3.–</strong></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-                <!-- Menu Card 5 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/japanese_curry_chicken.webp" alt="Japanese Curry Reis mit Chicken Katsu">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Japanese Curry Reis mit Chicken Katsu</h3>
-                        <p class="card-description">Aromatisches japanisches Curry mit knusprig paniertem Hähnchen und Reis. Herzhaft und sättigend.</p>
-                        <span class="card-price"><span>1 Portion</span> <strong>20.– CHF</strong></span>
-                    </div>
-                </article>
+                <!-- Kategorie: Getränke -->
+                <div class="menu-category menu-category-drinks" id="menu-getraenke">
+                    <h3 class="menu-category-title">Getränke</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Softgetränke</h4>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>3.50</strong></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <h4 class="menu-item-name">Mineralwasser</h4>
+                                <p class="menu-item-description">Mit oder ohne Kohlensäure.</p>
+                            </div>
+                            <div class="menu-prices">
+                                <span class="menu-price"><strong>3.50</strong></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="menu-info">
+                        <li>Alle Preise in CHF.</li>
+                        <li>Fragen zu Allergenen beantworte ich gerne direkt am Truck.</li>
+                        <li>Herkunft von Rind und Poulet: siehe <a href="views/herkunft.html">Deklaration</a>.</li>
+                    </ul>
+                </div>
+            </div>
 
-                <!-- Menu Card 6 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/japanese_curry.webp" alt="Japanese Curry Reis">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Japanese Curry Reis</h3>
-                        <p class="card-description">Aromatisches japanisches Curry mit Reis und Gemüse. Eine vollwertige vegetarische Option.</p>
-                        <span class="card-price"><span>1 Portion</span> <strong>15.– CHF</strong></span>
-                    </div>
-                </article>
-
-                <!-- Menu Card 7 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/korean_fried_chicken.webp" alt="Korean Fry Chicken ohne Reis">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Korean Fry Chicken ohne Reis</h3>
-                        <p class="card-description">Knusprig frittiertes Hähnchen in würziger koreanischer Glasur. Ein absoluter Geschmackshit.</p>
-                        <span class="card-price"><span>1 Portion</span> <strong>15.– CHF</strong></span>
-                    </div>
-                </article>
-
-                <!-- Menu Card 8 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/korean_fried_chicken_rice.webp" alt="Korean Fry Chicken mit Reis">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Korean Fry Chicken mit Reis</h3>
-                        <p class="card-description">Knusprig frittiertes Hähnchen in würziger koreanischer Glasur, serviert mit duftendem Reis.</p>
-                        <span class="card-price"><span>1 Portion</span> <strong>18.– CHF</strong></span>
-                    </div>
-                </article>
-
-                <!-- Menu Card 9 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/rice.webp" alt="Reis">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Reis</h3>
-                        <p class="card-description">Perfekt gegarter, duftender Reis. Die ideale Beilage zu allen Hauptgerichten.</p>
-                        <span class="card-price"><span>1 Portion</span> <strong>3.– CHF</strong></span>
-                    </div>
-                </article>
-
-                <!-- Menu Card 10 -->
-                <article class="menu-card">
-                    <div class="card-image">
-                        <img src="assets/img/summer_roll.webp" alt="Summer Rolle">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Summer Rolle</h3>
-                        <p class="card-description">Frische Reispapierrollen gefüllt mit knackigem Gemüse und Kräutern. Leicht und erfrischend.</p>
-                        <span class="card-price"><span>1 Portion</span> <strong>10.– CHF</strong></span>
-                    </div>
-                </article>
+            <!-- Food-Galerie -->
+            <p class="section-eyebrow food-gallery-title">Aus der Küche</p>
+            <div class="food-gallery">
+                <figure class="food-gallery-item">
+                    <img src="assets/img/korean_fried_chicken_rice.webp" alt="Korean Fried Chicken mit Reis" loading="lazy">
+                    <figcaption>Korean Fried Chicken</figcaption>
+                </figure>
+                <figure class="food-gallery-item">
+                    <img src="assets/img/shabaley.webp" alt="Shabaley" loading="lazy">
+                    <figcaption>Shabaley</figcaption>
+                </figure>
+                <figure class="food-gallery-item">
+                    <img src="assets/img/japanese_curry_chicken.webp" alt="Japanese Curry Reis mit Chicken Katsu" loading="lazy">
+                    <figcaption>Japanese Curry mit Katsu</figcaption>
+                </figure>
+                <figure class="food-gallery-item">
+                    <img src="assets/img/summer_roll.webp" alt="Summer Rolle" loading="lazy">
+                    <figcaption>Summer Rolle</figcaption>
+                </figure>
+                <figure class="food-gallery-item">
+                    <img src="assets/img/edamame.webp" alt="Edamame" loading="lazy">
+                    <figcaption>Edamame</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -447,10 +663,35 @@
     <!-- Über uns Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <div class="about-content">
+            <div class="about-intro">
+                <div class="about-portrait">
+                    <img src="assets/img/jigme.webp" alt="Jigme Losal Ngathak bereitet im Foodtruck Bowls zu" loading="lazy">
+                </div>
                 <div class="about-text">
-                    <h2 class="section-title">Über mich & Magic Momo</h2>
-                    
+                    <p class="section-eyebrow">Über mich</p>
+                    <h2 class="section-title">Hallo, ich bin Jigme</h2>
+                    <svg class="about-ornament" viewBox="0 0 140 44" aria-hidden="true">
+                        <path d="M1,42 L26,27.5 L31,30 L48,18 L52,20 L68,2 L74,10 L81,12.5 L91,17.5 L96,16 L105,24.5 L111,26.5 L139,42"/>
+                        <path d="M68,2 L65,11 L69,17 M78,12 L82,20 M96,16 L99,23"/>
+                    </svg>
+                    <blockquote class="about-quote">«Es soll frisch sein, ehrlich und einfach stimmig.»</blockquote>
+                    <p class="about-paragraph">Ich komme aus Tibet und koche, weil ich Menschen gern eine Freude mache. Momos sind meine Spezialität. Aber bei allem, was ich anbiete, zählt für mich das Gleiche. Am schönsten ist es, wenn jemand probiert und man sieht sofort, es schmeckt.</p>
+                    <p class="about-paragraph">Ich bin gerne mobil unterwegs. Das gibt mir ein Gefühl von Freiheit und ich treffe immer wieder neue Menschen. Das ehrliche Feedback und die kurzen Gespräche geben mir Energie. Und genau das motiviert mich, jedes Mal mit noch mehr Freude zu kochen.</p>
+                    <p class="about-signature"><strong>Jigme Losal Ngathak</strong> <span>Inhaber &amp; Koch</span></p>
+                    <div class="about-social">
+                        <a href="https://instagram.com/jigmeylosal2" target="_blank" rel="noopener noreferrer" class="footer-instagram" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            @jigmeylosal2
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-truck">
+                <div class="about-truck-text">
+                    <h3 class="about-heading">Rund um den Foodtruck</h3>
                     <div class="accordion">
                         <details class="accordion-item" open>
                             <summary class="accordion-header">Was macht Magic Momo & More besonders?</summary>
@@ -495,34 +736,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="assets/img/foodtruck_2.webp" alt="Mein gelber Food-Truck">
-                </div>
-            </div>
-
-            <!-- Portrait -->
-            <div class="team-section">
-                <h3 class="team-heading">Das bin ich</h3>
-                <div class="team-grid">
-                    <!-- Portrait Kachel 1: Inhaber -->
-                    <article class="portrait-card">
-                        <div class="portrait-image">
-                            <img src="assets/img/jigme2.webp" alt="Jigme Losal Ngathak - Inhaber & Koch">
-                        </div>
-                        <div class="portrait-info">
-                            <h4 class="portrait-name">Jigme Losal Ngathak</h4>
-                            <p class="portrait-role">Inhaber & Koch</p>
-                            <p class="portrait-description">Hallo, ich bin Jigme und komme aus Tibet. Ich koche, weil ich Menschen gern eine Freude mache. Momos sind meine Spezialität. Aber bei allem, was ich anbiete, zählt für mich das Gleiche. Es soll frisch sein, ehrlich und einfach stimmig. Am schönsten ist es, wenn jemand probiert und man sieht sofort, es schmeckt. Ich bin gerne mobil unterwegs. Das gibt mir ein Gefühl von Freiheit und ich treffe immer wieder neue Menschen. Das ehrliche Feedback und die kurzen Gespräche geben mir Energie. Und genau das motiviert mich, jedes Mal mit noch mehr Freude zu kochen.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="about-social">
-                    <p class="about-instagram-hint">Folge mir auf Instagram</p>
-                    <a href="https://instagram.com/jigmeylosal2" target="_blank" rel="noopener noreferrer" class="footer-instagram" aria-label="Instagram">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                        @jigmeylosal2
-                    </a>
+                    <img src="assets/img/foodtruck_1.webp" alt="Der gelbe Magic Momo & More Foodtruck" loading="lazy">
                 </div>
             </div>
         </div>
@@ -532,61 +746,73 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Kontakt & Standort</h2>
-                <p class="section-subtitle">Besuche mich oder nimm Kontakt auf</p>
+                <p class="section-eyebrow">Kontakt &amp; Standort</p>
+                <h2 class="section-title">Komm vorbei</h2>
+                <p class="section-subtitle">Besuche mich am Truck oder buche mich für deinen Anlass.</p>
             </div>
-            
+
             <div class="contact-grid">
                 <!-- Öffnungszeiten -->
                 <div class="contact-card">
-                    <div class="contact-icon">⏰</div>
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    </div>
                     <h3>Öffnungszeiten</h3>
                     <ul class="contact-list opening-hours">
-                        <li><span>Montag:</span><span>11:00 – 20:00 Uhr</span></li>
-                        <li><span>Dienstag:</span><span>17:00 – 20:00 Uhr</span></li>
-                        <li><span>Mittwoch:</span><span>11:00 – 20:00 Uhr</span></li>
-                        <li><span>Donnerstag:</span><span>11:00 – 20:00 Uhr</span></li>
-                        <li><span>Freitag:</span><span>17:00 – 20:00 Uhr</span></li>
+                        <li><span>Montag</span><span>11:00 – 20:00 Uhr</span></li>
+                        <li><span>Dienstag</span><span>17:00 – 20:00 Uhr</span></li>
+                        <li><span>Mittwoch</span><span>11:00 – 20:00 Uhr</span></li>
+                        <li><span>Donnerstag</span><span>11:00 – 20:00 Uhr</span></li>
+                        <li><span>Freitag</span><span>17:00 – 20:00 Uhr</span></li>
                     </ul>
                     <p class="contact-text payment-info">
-                        <strong>Zahlungsmöglichkeiten vor Ort:</strong><br>
-                        Kartenzahlung · TWINT · Bargeld
+                        <strong>Zahlung vor Ort:</strong> Karte · TWINT · Bargeld
                     </p>
                 </div>
                 <!-- Kontakt -->
                 <div class="contact-card">
-                    <div class="contact-icon">📞</div>
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+                    </div>
                     <h3>Kontaktiere mich</h3>
                     <ul class="contact-list">
                         <li>
-                            <strong>Telefon:</strong>
+                            <strong>Telefon</strong>
                             <a href="tel:+41764464231" class="contact-link">+41 76 446 42 31</a>
                         </li>
                         <li>
-                            <strong>E-Mail:</strong>
+                            <strong>E-Mail</strong>
                             <a href="mailto:jigmeylosal2@gmail.com" class="contact-link">jigmeylosal2@gmail.com</a>
                         </li>
                     </ul>
                     <div class="contact-actions">
-                        <a href="tel:+41764464231" class="btn btn-primary">Jetzt anrufen</a>
+                        <a href="tel:+41764464231" class="btn btn-dark">Jetzt anrufen</a>
                     </div>
                 </div>
 
                 <!-- Standort -->
                 <div class="contact-card">
-                    <div class="contact-icon">📍</div>
+                    <div class="contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                    </div>
                     <h3>Mein Standort</h3>
                     <p class="contact-text">
-                        Ich bin mobil unterwegs!
+                        Ich bin mobil unterwegs! Wo der Truck gerade steht, siehst du im aktuellen Fahrplan.
                     </p>
                     <a href="https://www.locationpartner.ch/geniesser" target="_blank" rel="noopener noreferrer" class="qr-code-link">
                         <div class="qr-code-container">
-                            <img src="assets/img/qr-code.webp" alt="QR-Code Aktueller Fahrplan" class="qr-code-image">
+                            <img src="assets/img/qr-code.webp" alt="QR-Code Aktueller Fahrplan" class="qr-code-image" loading="lazy">
                             <p class="qr-code-label">AKTUELLER FAHRPLAN</p>
                         </div>
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path class="wave-fill" d="M0,64 C240,8 520,8 760,52 C1000,96 1220,100 1440,36 L1440,120 L0,120 Z"/>
+                <path class="wave-line" d="M0,84 C240,28 520,28 760,72 C1000,116 1220,120 1440,56" vector-effect="non-scaling-stroke"/>
+            </svg>
         </div>
     </section>
 
@@ -601,7 +827,7 @@
 
                 <div class="footer-social">
                     <a href="https://instagram.com/jigmeylosal2" target="_blank" rel="noopener noreferrer" class="footer-instagram" aria-label="Instagram">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                         @jigmeylosal2
@@ -614,7 +840,7 @@
                     <a href="views/herkunft.html">Deklaration</a>
                 </nav>
             </div>
-            
+
             <div class="footer-copyright">
                 <p>&copy; 2026 Magic Momo & More</p>
                 <p class="footer-credit">Website by <a href="https://lee-roy.ch" target="_blank" rel="noopener noreferrer">Lee-Roy Romann</a></p>
