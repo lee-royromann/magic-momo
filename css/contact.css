@@ -1,22 +1,109 @@
 .contact-section {
-    background-color: #FFFBF5;
+    position: relative;
+    background-color: var(--color-saffron);
     padding-bottom: 200px;
+}
+
+.contact-section .section-eyebrow,
+.contact-section .section-subtitle {
+    color: rgba(20, 19, 15, 0.75);
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
+    gap: 24px;
 }
 
 .contact-card {
-    background-color: #FFFFFF;
-    padding: 40px 32px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 36px 30px;
+    border-radius: var(--radius);
+    background-color: var(--color-paper);
+    box-shadow: 0 14px 30px rgba(20, 19, 15, 0.12);
+}
+
+.contact-card .contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: var(--color-ink);
+    color: var(--color-saffron);
+}
+
+.contact-card .contact-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 16px;
+}
+
+.contact-list li {
+    margin-bottom: 14px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+.contact-list strong {
+    display: block;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.contact-card .contact-link {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-color: var(--color-saffron);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    overflow-wrap: anywhere;
+}
+
+.contact-card .contact-link:hover {
+    text-decoration-color: var(--color-ink);
+}
+
+.opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 0;
+    padding: 9px 0;
+    border-bottom: 1px dashed var(--color-line);
+}
+
+.opening-hours li span:first-child {
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.contact-text {
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+.payment-info {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.payment-info strong {
+    color: var(--color-text);
 }
 
 .contact-card .contact-actions {
@@ -24,112 +111,44 @@
     padding-top: 24px;
 }
 
-.contact-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.contact-card h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #212121;
-    margin-bottom: 20px;
-}
-
-.contact-list {
-    text-align: center;
-}
-
-.contact-list li {
-    margin-bottom: 16px;
-    color: #424242;
-    line-height: 1.7;
-}
-
-.contact-list strong {
-    display: block;
-    margin-bottom: 2px;
-}
-
-.opening-hours-label {
-    font-weight: 600;
-    color: #212121;
-    margin-bottom: 12px;
-    text-align: left;
-}
-
-.opening-hours {
-    margin-bottom: 20px;
-}
-
-.opening-hours li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.opening-hours li span:first-child {
-    font-weight: 600;
-    color: #212121;
-}
-
-.opening-hours li span:last-child {
-    color: #424242;
-}
-
-.contact-text {
-    color: #424242;
-    line-height: 1.7;
-}
-
-.payment-info {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #EEEEEE;
-    font-size: 0.95rem;
-}
-
-.contact-actions {
-    margin-top: 24px;
+.contact-card .contact-actions .btn {
+    width: 100%;
 }
 
 .qr-code-link {
     display: block;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    margin-top: 20px;
 }
 
 .qr-code-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 24px;
     padding: 20px;
-    cursor: pointer;
+    border-radius: var(--radius);
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-line);
 }
 
 .qr-code-image {
-    max-width: 200px;
     width: 100%;
+    max-width: 168px;
     height: auto;
-    display: block;
-    border-radius: 8px;
-    cursor: pointer;
 }
 
 .qr-code-label {
     margin-top: 12px;
-    font-weight: 600;
     font-size: 0.95rem;
-    color: #212121;
-    text-align: center;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-text);
+    transition: transform 0.3s ease;
 }
 
 .qr-code-link:hover .qr-code-label {
-    color: #FFC107;
     transform: translateY(-2px);
+}
+
+.contact-section .wave {
+    z-index: 0;
 }
