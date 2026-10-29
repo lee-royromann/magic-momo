@@ -1,7 +1,7 @@
 .footer {
-    background-color: #212121;
-    color: #FFFFFF;
-    padding: 32px 0 16px;
+    background-color: var(--color-ink);
+    color: var(--color-on-dark);
+    padding: 40px 0 20px;
 }
 
 .footer-main {
@@ -20,16 +20,16 @@
 }
 
 .footer-brand {
-    font-size: 1rem;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
     font-weight: 700;
-    color: #FFFFFF;
-    letter-spacing: -0.01em;
+    color: var(--color-saffron);
     line-height: 1.2;
 }
 
 .footer-tagline {
-    color: #BDBDBD;
-    font-size: 0.8rem;
+    color: var(--color-on-dark-muted);
+    font-size: 0.95rem;
     font-weight: 400;
     line-height: 1.35;
 }
@@ -46,19 +46,18 @@
     align-items: center;
     gap: 8px;
     padding: 8px 20px;
-    background: linear-gradient(135deg, #E1306C 0%, #F77737 50%, #FCAF45 100%);
-    border-radius: 24px;
-    color: #FFFFFF;
-    font-size: 0.85rem;
-    font-weight: 600;
+    border: 1.5px solid var(--color-saffron);
+    border-radius: 999px;
+    color: var(--color-saffron);
+    font-size: 0.95rem;
+    font-weight: 700;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(225, 48, 108, 0.3);
     white-space: nowrap;
 }
 
 .footer-instagram:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(225, 48, 108, 0.4);
+    background-color: var(--color-saffron);
+    color: var(--color-ink);
 }
 
 .footer-instagram svg {
@@ -74,15 +73,15 @@
 }
 
 .footer-links-row a {
-    color: #BDBDBD;
-    font-size: 0.8rem;
+    color: var(--color-on-dark-muted);
+    font-size: 0.92rem;
     transition: color 0.3s ease;
     font-weight: 500;
     white-space: nowrap;
 }
 
 .footer-links-row a:hover {
-    color: #FFC107;
+    color: var(--color-saffron);
 }
 
 .footer-copyright {
@@ -91,29 +90,29 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 14px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid var(--color-line-dark);
     margin-top: 24px;
 }
 
 .footer-copyright p {
-    color: #757575;
-    font-size: 0.7rem;
+    color: var(--color-on-dark-muted);
+    font-size: 0.8rem;
     font-weight: 400;
     margin: 0;
 }
 
 .footer-credit {
-    font-size: 0.65rem !important;
-    color: #616161 !important;
+    font-size: 0.75rem !important;
+    color: var(--color-on-dark-muted) !important;
     margin: 0 !important;
 }
 
 .footer-credit a {
-    color: #9E9E9E;
+    color: var(--color-on-dark);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-credit a:hover {
-    color: #FFC107;
+    color: var(--color-saffron);
 }
