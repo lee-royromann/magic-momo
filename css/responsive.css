@@ -3,16 +3,15 @@
         flex-direction: column;
         align-items: stretch;
         min-height: auto;
-        padding: 104px 0 120px;
+        padding: 0 0 120px;
     }
 
     .hero-visual {
         position: relative;
         top: auto;
         order: -1;
-        width: min(72vw, 460px);
-        margin: 0 0 16px auto;
-        transform: none;
+        width: min(76vw, 480px);
+        margin: 0 0 24px auto;
     }
 
     .hero-content {
@@ -139,12 +138,12 @@
     }
 
     .hero {
-        padding: 84px 0 96px;
+        padding: 0 0 96px;
     }
 
     .hero-visual {
-        width: 80vw;
-        margin-bottom: 8px;
+        width: min(86vw, 480px);
+        margin-bottom: 16px;
     }
 
     .hero-badge {
@@ -167,12 +166,6 @@
 
     .btn-text-short {
         display: inline;
-    }
-
-    .hero-facts {
-        margin-top: 28px;
-        gap: 8px 18px;
-        font-size: 0.92rem;
     }
 
     section {
@@ -294,7 +287,7 @@
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: clamp(1.75rem, 9vw, 2.5rem);
     }
 
     .hero-subtitle {
@@ -326,14 +319,6 @@
 
     .hero-eyebrow {
         letter-spacing: 0.1em;
-    }
-
-    .hero-eyebrow::before {
-        display: none;
-    }
-
-    .hero-title {
-        font-size: 2.1rem;
     }
 }
 

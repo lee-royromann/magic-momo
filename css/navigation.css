@@ -37,9 +37,8 @@
 
 .logo-text {
     font-family: var(--font-display);
-    font-size: 1.3rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+    font-size: 1.35rem;
+    font-weight: 600;
 }
 
 .nav-menu {
@@ -49,8 +48,8 @@
 }
 
 .nav-link {
-    font-size: 1.05rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--color-ink);
     position: relative;
     transition: opacity 0.3s ease;
