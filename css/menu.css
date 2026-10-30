@@ -13,28 +13,6 @@
     color: var(--color-saffron);
 }
 
-.menu-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: -24px 0 72px;
-}
-
-.menu-tabs a {
-    padding: 8px 18px;
-    border: 1px solid var(--color-line-dark);
-    border-radius: 999px;
-    font-size: 0.98rem;
-    font-weight: 700;
-    color: var(--color-on-dark);
-}
-
-.menu-tabs a:hover {
-    border-color: var(--color-saffron);
-    color: var(--color-saffron);
-}
-
 .menu-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -42,6 +20,7 @@
         "momo more"
         "momo drinks"
         "special special";
+    grid-template-rows: auto 1fr auto;
     gap: 72px 80px;
     align-items: start;
 }
@@ -204,18 +183,17 @@
     margin-bottom: 2px;
 }
 
-.menu-info {
-    margin-top: 32px;
-    padding: 22px 24px;
-    border-radius: var(--radius);
-    background-color: var(--color-ink-soft);
-    font-size: 0.98rem;
+.menu-footnote {
+    max-width: 720px;
+    margin: 72px auto 0;
+    text-align: center;
+    font-size: 0.92rem;
     line-height: 1.6;
     color: var(--color-on-dark-muted);
 }
 
-.menu-info a {
-    color: var(--color-saffron);
+.menu-footnote a {
+    color: var(--color-on-dark);
     text-decoration: underline;
     text-underline-offset: 3px;
 }

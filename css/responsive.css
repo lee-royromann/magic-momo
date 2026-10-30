@@ -1,21 +1,16 @@
 @media (max-width: 1024px) {
     .hero {
-        flex-direction: column;
-        align-items: stretch;
         min-height: auto;
-        padding: 0 0 120px;
-    }
-
-    .hero-visual {
-        position: relative;
-        top: auto;
-        order: -1;
-        width: min(76vw, 480px);
-        margin: 0 0 24px auto;
+        padding: 150px 0 170px;
     }
 
     .hero-content {
-        max-width: 620px;
+        max-width: 52vw;
+    }
+
+    .hero-visual {
+        right: -10vw;
+        width: 50vw;
     }
 
     .food-gallery {
@@ -50,6 +45,7 @@
             "more"
             "special"
             "drinks";
+        grid-template-rows: none;
         gap: 56px;
     }
 
@@ -137,15 +133,6 @@
         display: flex;
     }
 
-    .hero {
-        padding: 0 0 96px;
-    }
-
-    .hero-visual {
-        width: min(86vw, 480px);
-        margin-bottom: 16px;
-    }
-
     .hero-badge {
         left: -2%;
         width: 112px;
@@ -178,10 +165,6 @@
 
     .menu-section {
         padding-top: 56px;
-    }
-
-    .menu-tabs {
-        margin: -8px 0 48px;
     }
 
     .menu-item-name {
@@ -278,6 +261,28 @@
     .back-to-home {
         margin-top: 32px;
         padding-top: 24px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        min-height: auto;
+        padding: 0 0 96px;
+    }
+
+    .hero-visual {
+        position: relative;
+        top: auto;
+        right: auto;
+        order: -1;
+        width: min(86vw, 584px);
+        margin: 0 0 16px auto;
+    }
+
+    .hero-content {
+        max-width: none;
     }
 }
 
