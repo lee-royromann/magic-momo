@@ -386,9 +386,10 @@
                 <p class="hero-eyebrow">Foodtruck im Kanton Zürich</p>
                 <h1 class="hero-title"><span>Tibetische Momos&nbsp;&amp;</span> <span>Himalaya-Küche</span></h1>
                 <p class="hero-subtitle">Handgemachte Momos, frisch gedämpft oder goldbraun gebraten, direkt aus dem gelben Foodtruck. Dazu gibt es Himalaya Curry, Korean Fried Chicken und vieles mehr.</p>
+                <p class="hero-today" data-fahrplan-heute hidden></p>
                 <div class="hero-actions">
                     <a href="#menu" class="btn btn-dark">Menu ansehen</a>
-                    <a href="#contact" class="btn btn-outline"><span class="btn-text-full">Fahrplan &amp; Kontakt</span><span class="btn-text-short">Fahrplan</span></a>
+                    <a href="#fahrplan" class="btn btn-outline">Fahrplan</a>
                 </div>
             </div>
         </div>
@@ -730,27 +731,24 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <p class="section-eyebrow">Kontakt &amp; Standort</p>
                 <h2 class="section-title">Komm vorbei</h2>
-                <p class="section-subtitle">Besuche mich am Truck oder buche mich für deinen Anlass.</p>
+                <p class="section-subtitle">Hier findest du den Truck diese Woche. Für Anlässe und Firmen kannst du mich direkt anfragen.</p>
             </div>
 
-            <div class="contact-grid">
-                <!-- Öffnungszeiten -->
-                <div class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-                    </div>
-                    <h3>Öffnungszeiten</h3>
-                    <ul class="contact-list opening-hours">
-                        <li><span>Montag</span><span>11 bis 20 Uhr</span></li>
-                        <li><span>Dienstag</span><span>17 bis 20 Uhr</span></li>
-                        <li><span>Mittwoch</span><span>11 bis 20 Uhr</span></li>
-                        <li><span>Donnerstag</span><span>11 bis 20 Uhr</span></li>
-                        <li><span>Freitag</span><span>17 bis 20 Uhr</span></li>
+            <div class="contact-layout">
+                <!-- Fahrplan: wird aus data/fahrplan.json gefüllt, ohne JavaScript bleiben die Zeiten stehen -->
+                <div class="fahrplan-card" id="fahrplan">
+                    <h3>Fahrplan</h3>
+                    <ul class="fahrplan-list" data-fahrplan-liste>
+                        <li class="fahrplan-row"><span class="fahrplan-day">Montag</span><span class="fahrplan-place"></span><span class="fahrplan-time">11 bis 20 Uhr</span></li>
+                        <li class="fahrplan-row"><span class="fahrplan-day">Dienstag</span><span class="fahrplan-place"></span><span class="fahrplan-time">17 bis 20 Uhr</span></li>
+                        <li class="fahrplan-row"><span class="fahrplan-day">Mittwoch</span><span class="fahrplan-place"></span><span class="fahrplan-time">11 bis 20 Uhr</span></li>
+                        <li class="fahrplan-row"><span class="fahrplan-day">Donnerstag</span><span class="fahrplan-place"></span><span class="fahrplan-time">11 bis 20 Uhr</span></li>
+                        <li class="fahrplan-row"><span class="fahrplan-day">Freitag</span><span class="fahrplan-place"></span><span class="fahrplan-time">17 bis 20 Uhr</span></li>
                     </ul>
-                    <p class="contact-text payment-info">Bezahlen kannst du mit Karte, TWINT oder bar.</p>
+                    <p class="fahrplan-note">Kurzfristige Änderungen findest du auf <a href="https://instagram.com/jigmeylosal2" target="_blank" rel="noopener noreferrer" data-fahrplan-kurzfristig>Instagram</a>.</p>
                 </div>
+
                 <!-- Kontakt -->
                 <div class="contact-card">
                     <div class="contact-icon" aria-hidden="true">
@@ -767,26 +765,10 @@
                             <a href="mailto:jigmeylosal2@gmail.com" class="contact-link">jigmeylosal2@gmail.com</a>
                         </li>
                     </ul>
+                    <p class="contact-text payment-info">Bezahlen kannst du mit Karte, TWINT oder bar.</p>
                     <div class="contact-actions">
                         <a href="tel:+41764464231" class="btn btn-dark">Jetzt anrufen</a>
                     </div>
-                </div>
-
-                <!-- Standort -->
-                <div class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-                    </div>
-                    <h3>Mein Standort</h3>
-                    <p class="contact-text">
-                        Ich bin mobil unterwegs! Wo der Truck gerade steht, siehst du im aktuellen Fahrplan.
-                    </p>
-                    <a href="https://www.locationpartner.ch/geniesser" target="_blank" rel="noopener noreferrer" class="qr-code-link">
-                        <div class="qr-code-container">
-                            <img src="assets/img/qr-code.webp" alt="QR-Code Aktueller Fahrplan" class="qr-code-image" loading="lazy">
-                            <p class="qr-code-label">AKTUELLER FAHRPLAN</p>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>

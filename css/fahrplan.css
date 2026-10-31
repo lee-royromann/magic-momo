@@ -1,0 +1,133 @@
+.hero-today {
+    margin: -12px 0 28px;
+    font-size: 1.12rem;
+    line-height: 1.5;
+    color: var(--color-ink);
+}
+
+.hero-today em {
+    font-family: var(--font-display);
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.hero-today a {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.fahrplan-card {
+    padding: 36px 32px;
+    border-radius: var(--radius);
+    background-color: var(--color-paper);
+    box-shadow: 0 14px 30px rgba(20, 19, 15, 0.12);
+    scroll-margin-top: 104px;
+}
+
+.fahrplan-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 12px;
+}
+
+.fahrplan-row {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr auto;
+    gap: 4px 20px;
+    align-items: baseline;
+    padding: 14px 12px;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.fahrplan-row:last-child {
+    border-bottom: none;
+}
+
+.fahrplan-row.is-today {
+    border-bottom-color: transparent;
+    background-color: rgba(245, 197, 25, 0.3);
+}
+
+.fahrplan-row.is-today:first-child,
+.fahrplan-row:not(.is-today) + .is-today {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fahrplan-row.is-today:last-child,
+.fahrplan-row.is-today:has(+ :not(.is-today)) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fahrplan-day {
+    font-family: var(--font-display);
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.fahrplan-place strong {
+    display: block;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.fahrplan-place span {
+    font-size: 0.94rem;
+    color: var(--color-text-muted);
+}
+
+.fahrplan-place a {
+    margin-left: 6px;
+    font-size: 0.94rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-color: var(--color-saffron);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.fahrplan-row.is-free .fahrplan-place,
+.fahrplan-row.is-cancelled .fahrplan-place {
+    font-style: italic;
+    color: var(--color-text-muted);
+}
+
+.fahrplan-time {
+    font-weight: 600;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text);
+}
+
+.fahrplan-note {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+.fahrplan-note a {
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-color: var(--color-saffron);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.fahrplan-note + .fahrplan-note {
+    margin-top: 6px;
+}

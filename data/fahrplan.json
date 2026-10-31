@@ -1,0 +1,55 @@
+{
+  "beispiel": true,
+  "kurzfristig": "https://instagram.com/jigmeylosal2",
+  "ohneEinsatz": "Für Anlässe buchbar",
+  "plaetze": {
+    "grueze": {
+      "name": "Winterthur Grüze",
+      "hinweis": "Beim Bahnhof Grüze, Ausgang Industrie",
+      "lat": 47.4932,
+      "lng": 8.7496
+    },
+    "toess": {
+      "name": "Winterthur Töss",
+      "hinweis": "Zentrum Töss, beim Brunnen",
+      "lat": 47.4878,
+      "lng": 8.7078
+    },
+    "faellanden": {
+      "name": "Fällanden",
+      "hinweis": "Gewerbezone, vor dem Eingang",
+      "lat": 47.3707,
+      "lng": 8.6392
+    },
+    "effretikon": {
+      "name": "Effretikon",
+      "hinweis": "Bahnhofplatz Süd",
+      "lat": 47.4257,
+      "lng": 8.6873
+    }
+  },
+  "woche": {
+    "mo": [
+      { "von": "11:00", "bis": "14:00", "platz": "grueze" },
+      { "von": "17:00", "bis": "20:00", "platz": "toess" }
+    ],
+    "di": [
+      { "von": "17:00", "bis": "20:00", "platz": "faellanden" }
+    ],
+    "mi": [
+      { "von": "11:00", "bis": "20:00", "platz": "effretikon" }
+    ],
+    "do": [
+      { "von": "11:00", "bis": "20:00", "platz": "grueze" }
+    ],
+    "fr": [
+      { "von": "17:00", "bis": "20:00", "platz": "faellanden" }
+    ],
+    "sa": [],
+    "so": []
+  },
+  "ausnahmen": [
+    { "datum": "2026-12-24", "ausfall": true },
+    { "datum": "2026-12-31", "ausfall": true }
+  ]
+}
