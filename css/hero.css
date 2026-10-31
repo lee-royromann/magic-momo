@@ -113,6 +113,14 @@
     fill: var(--color-saffron);
 }
 
+.hero-badge-currency {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    fill: var(--color-on-dark);
+}
+
 .hero-badge-note {
     font-family: var(--font-body);
     font-size: 15px;

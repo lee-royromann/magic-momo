@@ -4,7 +4,6 @@
     padding-bottom: 200px;
 }
 
-.contact-section .section-eyebrow,
 .contact-section .section-subtitle {
     color: rgba(20, 19, 15, 0.75);
 }
@@ -16,29 +15,13 @@
 }
 
 .contact-card {
+    scroll-margin-top: 96px;
     display: flex;
     flex-direction: column;
     padding: 36px 30px;
     border-radius: var(--radius);
     background-color: var(--color-paper);
     box-shadow: 0 14px 30px rgba(20, 19, 15, 0.12);
-}
-
-.contact-card .contact-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 52px;
-    height: 52px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    background-color: var(--color-ink);
-    color: var(--color-saffron);
-}
-
-.contact-card .contact-icon svg {
-    width: 24px;
-    height: 24px;
 }
 
 .contact-card h3 {

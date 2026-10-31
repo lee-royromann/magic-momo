@@ -12,15 +12,6 @@
 
 .about-portrait {
     position: relative;
-    margin: 0 24px 24px 0;
-}
-
-.about-portrait::before {
-    content: '';
-    position: absolute;
-    inset: 24px -24px -24px 24px;
-    border-radius: var(--radius);
-    background-color: var(--color-saffron);
 }
 
 .about-portrait img {
@@ -35,29 +26,6 @@
 
 .about-text .section-title {
     margin-bottom: 24px;
-}
-
-.about-ornament {
-    display: block;
-    width: 104px;
-    height: auto;
-    margin-bottom: 20px;
-    fill: none;
-    stroke: var(--color-ink);
-    stroke-width: 2.2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.about-quote {
-    margin-bottom: 28px;
-    font-family: var(--font-display);
-    font-size: clamp(1.5rem, 2.6vw, 2rem);
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.35;
-    color: var(--color-text);
-    text-wrap: balance;
 }
 
 .about-paragraph {
@@ -93,13 +61,7 @@
 }
 
 .about-social .footer-instagram {
-    border-color: var(--color-ink);
     color: var(--color-ink);
-}
-
-.about-social .footer-instagram:hover {
-    background-color: var(--color-ink);
-    color: var(--color-saffron);
 }
 
 .about-truck {

@@ -4,7 +4,6 @@
     padding-top: 80px;
 }
 
-.menu-section .section-eyebrow,
 .menu-section .section-subtitle {
     color: var(--color-on-dark-muted);
 }
@@ -198,16 +197,11 @@
     text-underline-offset: 3px;
 }
 
-.food-gallery-title {
-    margin-top: 112px;
-    text-align: center;
-}
-
 .food-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 64px;
 }
 
 .food-gallery-item {
@@ -234,7 +228,7 @@
     right: 0;
     bottom: 0;
     padding: 48px 16px 14px;
-    background: linear-gradient(to top, rgba(20, 19, 15, 0.88), transparent);
+    background: linear-gradient(to top, rgba(20, 19, 15, 0.92) 0%, rgba(20, 19, 15, 0.85) 55%, rgba(20, 19, 15, 0) 100%);
     font-size: 1.02rem;
     font-weight: 700;
     color: var(--color-on-dark);

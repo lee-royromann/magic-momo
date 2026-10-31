@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('../assets/fonts/figtree-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: italic;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url('../assets/fonts/figtree-italic-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('../assets/fonts/fraunces-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: italic;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('../assets/fonts/fraunces-italic-latin.woff2') format('woff2');
+}
+
 :root {
     --color-saffron: #F5C519;
     --color-saffron-light: #FFD84D;
@@ -16,6 +48,7 @@
     --radius: 14px;
     --shadow-soft: 0 10px 30px rgba(20, 19, 15, 0.08);
     --shadow-lift: 0 18px 40px rgba(20, 19, 15, 0.16);
+    color-scheme: only light;
 }
 
 * {
@@ -118,21 +151,12 @@ button {
 
 section {
     padding: 112px 0;
-    scroll-margin-top: 88px;
+    scroll-margin-top: 80px;
 }
 
 .section-header {
     text-align: center;
     margin-bottom: 64px;
-}
-
-.section-eyebrow {
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    margin-bottom: 12px;
 }
 
 .section-title {
@@ -188,4 +212,54 @@ button:focus-visible,
 summary:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 3px;
+}
+
+.btn-dark:focus-visible {
+    outline-color: var(--color-ink);
+}
+
+[tabindex="-1"]:focus {
+    outline: none;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    z-index: 2000;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: var(--color-ink);
+    color: var(--color-saffron);
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
 }
