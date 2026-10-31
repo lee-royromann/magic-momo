@@ -1,6 +1,7 @@
 'use strict';
 
 let siteElements = null;
+let isHighlightQueued = false;
 
 /**
  * Initialisiert alle Interaktionen nach dem Laden des DOM.
@@ -63,6 +64,7 @@ function setMobileMenuState(isOpen) {
     siteElements.navMenu.classList.toggle('active', isOpen);
     siteElements.mobileMenuToggle.classList.toggle('active', isOpen);
     siteElements.mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
+    siteElements.mobileMenuToggle.setAttribute('aria-label', isOpen ? 'Menu schliessen' : 'Menu öffnen');
 }
 
 /**
@@ -80,11 +82,12 @@ function handleMenuToggleClick() {
  * @returns {void}
  */
 function handleDocumentKeydown(event) {
-    if (event.key !== 'Escape') {
+    if (event.key !== 'Escape' || !siteElements.navMenu.classList.contains('active')) {
         return;
     }
 
     setMobileMenuState(false);
+    siteElements.mobileMenuToggle.focus();
 }
 
 /**
@@ -121,7 +124,21 @@ function handleAnchorNavigation(event) {
 
     event.preventDefault();
     scrollToTarget(target);
+    moveFocusToTarget(target);
     setMobileMenuState(false);
+}
+
+/**
+ * Setzt den Tastaturfokus auf das Sprungziel, ohne erneut zu scrollen.
+ * @param {HTMLElement} target Das Ziel-Element.
+ * @returns {void}
+ */
+function moveFocusToTarget(target) {
+    if (!target.hasAttribute('tabindex')) {
+        target.setAttribute('tabindex', '-1');
+    }
+
+    target.focus({ preventScroll: true });
 }
 
 /**
@@ -157,7 +174,7 @@ function getAnchorTarget(anchor) {
         return null;
     }
 
-    return document.querySelector(anchor.getAttribute('href'));
+    return document.getElementById(decodeURIComponent(anchor.getAttribute('href').slice(1)));
 }
 
 /**
@@ -168,8 +185,16 @@ function getAnchorTarget(anchor) {
 function scrollToTarget(target) {
     window.scrollTo({
         top: getTargetPosition(target),
-        behavior: 'smooth'
+        behavior: prefersReducedMotion() ? 'auto' : 'smooth'
     });
+}
+
+/**
+ * Prueft, ob reduzierte Bewegung gewuenscht ist.
+ * @returns {boolean}
+ */
+function prefersReducedMotion() {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
 
 /**
@@ -192,8 +217,24 @@ function initialiseSectionHighlight() {
         return;
     }
 
-    window.addEventListener('scroll', highlightActiveSection);
+    window.addEventListener('scroll', handleWindowScroll, { passive: true });
     highlightActiveSection();
+}
+
+/**
+ * Buendelt Scroll-Ereignisse auf einen Durchlauf pro Frame.
+ * @returns {void}
+ */
+function handleWindowScroll() {
+    if (isHighlightQueued) {
+        return;
+    }
+
+    isHighlightQueued = true;
+    window.requestAnimationFrame(() => {
+        isHighlightQueued = false;
+        highlightActiveSection();
+    });
 }
 
 /**
@@ -249,7 +290,13 @@ function getVisibleSectionId(section, currentSectionId) {
  * @returns {void}
  */
 function updateActiveLink(link, currentSectionId) {
-    link.classList.toggle('active', isMatchingSectionLink(link, currentSectionId));
+    const isActive = isMatchingSectionLink(link, currentSectionId);
+    link.classList.toggle('active', isActive);
+    if (isActive) {
+        link.setAttribute('aria-current', 'true');
+    } else {
+        link.removeAttribute('aria-current');
+    }
 }
 
 /**

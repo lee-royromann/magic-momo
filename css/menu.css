@@ -4,34 +4,11 @@
     padding-top: 80px;
 }
 
-.menu-section .section-eyebrow,
 .menu-section .section-subtitle {
     color: var(--color-on-dark-muted);
 }
 
 .menu-section .section-title {
-    color: var(--color-saffron);
-}
-
-.menu-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: -24px 0 72px;
-}
-
-.menu-tabs a {
-    padding: 8px 18px;
-    border: 1px solid var(--color-line-dark);
-    border-radius: 999px;
-    font-size: 0.98rem;
-    font-weight: 700;
-    color: var(--color-on-dark);
-}
-
-.menu-tabs a:hover {
-    border-color: var(--color-saffron);
     color: var(--color-saffron);
 }
 
@@ -42,6 +19,7 @@
         "momo more"
         "momo drinks"
         "special special";
+    grid-template-rows: auto 1fr auto;
     gap: 72px 80px;
     align-items: start;
 }
@@ -77,22 +55,12 @@
 }
 
 .menu-category-title {
-    display: flex;
-    align-items: center;
-    gap: 16px;
     font-family: var(--font-display);
     font-size: clamp(1.7rem, 3vw, 2.25rem);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     color: var(--color-saffron);
     margin-bottom: 16px;
-}
-
-.menu-category-title::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background-color: var(--color-line-dark);
 }
 
 .menu-item {
@@ -108,8 +76,8 @@
 }
 
 .menu-item-name {
-    font-size: 1.3rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
     line-height: 1.25;
     color: var(--color-on-dark);
 }
@@ -150,8 +118,8 @@
 }
 
 .menu-price strong {
-    font-size: 1.3rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--color-saffron);
     font-variant-numeric: tabular-nums;
 }
@@ -196,67 +164,44 @@
 }
 
 .menu-feature .menu-item-name {
-    font-size: 1.65rem;
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 600;
 }
 
 .menu-feature .menu-price strong {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
 }
 
 .menu-label {
     font-family: var(--font-display);
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    color: var(--color-on-dark);
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--color-saffron);
     margin-bottom: 2px;
 }
 
-.menu-info {
-    margin-top: 32px;
-    padding: 22px 24px;
-    border-radius: var(--radius);
-    background-color: var(--color-ink-soft);
-    font-size: 0.98rem;
+.menu-footnote {
+    max-width: 720px;
+    margin: 72px auto 0;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.6;
     color: var(--color-on-dark-muted);
 }
 
-.menu-info li {
-    position: relative;
-    padding-left: 18px;
-}
-
-.menu-info li + li {
-    margin-top: 6px;
-}
-
-.menu-info li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.65em;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: var(--color-saffron);
-}
-
-.menu-info a {
-    color: var(--color-saffron);
+.menu-footnote a {
+    color: var(--color-on-dark);
     text-decoration: underline;
     text-underline-offset: 3px;
-}
-
-.food-gallery-title {
-    margin-top: 112px;
-    text-align: center;
 }
 
 .food-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 64px;
 }
 
 .food-gallery-item {
@@ -283,7 +228,7 @@
     right: 0;
     bottom: 0;
     padding: 48px 16px 14px;
-    background: linear-gradient(to top, rgba(20, 19, 15, 0.88), transparent);
+    background: linear-gradient(to top, rgba(20, 19, 15, 0.92) 0%, rgba(20, 19, 15, 0.85) 55%, rgba(20, 19, 15, 0) 100%);
     font-size: 1.02rem;
     font-weight: 700;
     color: var(--color-on-dark);

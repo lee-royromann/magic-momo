@@ -21,17 +21,10 @@
 
 .footer-brand {
     font-family: var(--font-display);
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: var(--color-saffron);
     line-height: 1.2;
-}
-
-.footer-tagline {
-    color: var(--color-on-dark-muted);
-    font-size: 0.95rem;
-    font-weight: 400;
-    line-height: 1.35;
 }
 
 .footer-social {
@@ -45,19 +38,20 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 20px;
-    border: 1.5px solid var(--color-saffron);
-    border-radius: 999px;
+    padding: 6px 0;
     color: var(--color-saffron);
     font-size: 0.95rem;
     font-weight: 700;
-    transition: all 0.3s ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    transition: text-decoration-color 0.3s ease;
     white-space: nowrap;
 }
 
 .footer-instagram:hover {
-    background-color: var(--color-saffron);
-    color: var(--color-ink);
+    text-decoration-color: currentColor;
 }
 
 .footer-instagram svg {
@@ -109,7 +103,8 @@
 
 .footer-credit a {
     color: var(--color-on-dark);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
     transition: color 0.2s ease;
 }
 

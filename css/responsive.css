@@ -1,22 +1,16 @@
 @media (max-width: 1024px) {
     .hero {
-        flex-direction: column;
-        align-items: stretch;
         min-height: auto;
-        padding: 104px 0 120px;
-    }
-
-    .hero-visual {
-        position: relative;
-        top: auto;
-        order: -1;
-        width: min(72vw, 460px);
-        margin: 0 0 16px auto;
-        transform: none;
+        padding: 150px 0 170px;
     }
 
     .hero-content {
-        max-width: 620px;
+        max-width: 52vw;
+    }
+
+    .hero-visual {
+        right: -10vw;
+        width: 50vw;
     }
 
     .food-gallery {
@@ -24,7 +18,7 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-padding-left: 24px;
-        margin: 24px -24px 0;
+        margin: 56px -24px 0;
         padding: 0 24px 8px;
         scrollbar-width: none;
     }
@@ -51,6 +45,7 @@
             "more"
             "special"
             "drinks";
+        grid-template-rows: none;
         gap: 56px;
     }
 
@@ -125,26 +120,31 @@
         box-shadow: 0 12px 24px rgba(20, 19, 15, 0.15);
         transform: translateY(-120%);
         opacity: 0;
-        transition: all 0.3s ease;
+        visibility: hidden;
+        max-height: calc(100vh - 68px);
+        max-height: calc(100dvh - 68px);
+        overflow-y: auto;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
         z-index: 999;
     }
 
     .nav-menu.active {
         transform: translateY(0);
         opacity: 1;
+        visibility: visible;
+        transition-delay: 0s;
+    }
+
+    section {
+        scroll-margin-top: 68px;
+    }
+
+    .contact-card {
+        scroll-margin-top: 84px;
     }
 
     .mobile-menu-toggle {
         display: flex;
-    }
-
-    .hero {
-        padding: 84px 0 96px;
-    }
-
-    .hero-visual {
-        width: 80vw;
-        margin-bottom: 8px;
     }
 
     .hero-badge {
@@ -169,12 +169,6 @@
         display: inline;
     }
 
-    .hero-facts {
-        margin-top: 28px;
-        gap: 8px 18px;
-        font-size: 0.92rem;
-    }
-
     section {
         padding: 72px 0;
     }
@@ -185,10 +179,6 @@
 
     .menu-section {
         padding-top: 56px;
-    }
-
-    .menu-tabs {
-        margin: -8px 0 48px;
     }
 
     .menu-item-name {
@@ -215,20 +205,8 @@
         gap: 6px 24px;
     }
 
-    .food-gallery-title {
-        margin-top: 80px;
-    }
-
     .food-gallery-item {
         flex-basis: 64vw;
-    }
-
-    .about-portrait {
-        margin: 0 16px 16px 0;
-    }
-
-    .about-portrait::before {
-        inset: 16px -16px -16px 16px;
     }
 
     .contact-section {
@@ -273,18 +251,42 @@
         margin-left: 12px;
     }
 
-    .impressum-section {
-        padding: 100px 0 48px;
-        min-height: auto;
+    .legal-section {
+        padding: 112px 0 72px;
     }
 
-    .impressum-card {
-        padding: 24px;
+    .legal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-card {
+        padding: 28px 22px;
     }
 
     .back-to-home {
-        margin-top: 32px;
-        padding-top: 24px;
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        min-height: auto;
+        padding: 0 0 96px;
+    }
+
+    .hero-visual {
+        position: relative;
+        top: auto;
+        right: auto;
+        order: -1;
+        width: min(86vw, 584px);
+        margin: 0 0 16px auto;
+    }
+
+    .hero-content {
+        max-width: none;
     }
 }
 
@@ -294,7 +296,7 @@
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: clamp(1.75rem, 9vw, 2.5rem);
     }
 
     .hero-subtitle {
@@ -326,14 +328,6 @@
 
     .hero-eyebrow {
         letter-spacing: 0.1em;
-    }
-
-    .hero-eyebrow::before {
-        display: none;
-    }
-
-    .hero-title {
-        font-size: 2.1rem;
     }
 }
 

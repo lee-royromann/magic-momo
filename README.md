@@ -1,16 +1,16 @@
-# Magic Momo
+# Magic Momo & More
 
 <p align="center">
-  <img src="assets/img/magic-momo.webp" alt="Magic Momo Foodtruck" width="960">
+  <img src="assets/img/magic-momo.webp" alt="Magic Momo & More Foodtruck" width="960">
 </p>
 
-Magic Momo ist die offizielle Website des Foodtrucks von Jigmey Losal im Kanton Zürich. Die Seite präsentiert tibetische Momos und asiatische Spezialitäten und führt Besucherinnen und Besucher schnell zu Angebot, Kontaktmöglichkeiten und rechtlichen Informationen.
+Magic Momo & More ist die offizielle Website des Foodtrucks von Jigme Losal Ngathak im Kanton Zürich. Die Seite präsentiert tibetische Momos und asiatische Spezialitäten und führt Besucherinnen und Besucher schnell zu Angebot, Kontaktmöglichkeiten und rechtlichen Informationen.
 
 Das Projekt ist als schlanke statische Website umgesetzt. Im Fokus stehen eine klare mobile Nutzung, schnelle Ladezeiten, optimierte WebP-Bilder und eine saubere Struktur für Suchmaschinen und Gäste.
 
 ## Inhalt
 
-Die Website umfasst eine Startseite mit Foodtruck-Vorstellung, Menü, Story und Kontaktbereich. Ergänzt wird sie durch eigenständige Seiten für Impressum, Datenschutz und Herkunftsdeklaration.
+Die Website umfasst eine Startseite mit Foodtruck-Vorstellung, Menü, Story und Kontaktbereich. Ergänzt wird sie durch eigenständige Seiten für Impressum, Datenschutz sowie Herkunft und Allergene.
 
 ## Technik
 
@@ -18,7 +18,13 @@ Die technische Basis besteht aus HTML, CSS und JavaScript. Das Projekt verwendet
 
 ## Projektstruktur
 
-Die Hauptseite liegt in index.html. styles.css enthält Layout und Responsive Design, scripts.js steuert Navigation und Interaktionen. Im Ordner assets liegt das visuelle Material wie Logo, Favicon und Bilder. Der Ordner views enthält die rechtlichen Unterseiten.
+Die Hauptseite liegt in index.html. styles.css bindet die CSS-Module aus dem Ordner css ein, scripts.js steuert Navigation und Interaktionen. Im Ordner assets liegen Logo, Favicon, Bilder und die selbst gehosteten Schriften (Figtree und Fraunces, SIL Open Font License). Der Ordner views enthält die rechtlichen Unterseiten.
+
+## Deploy
+
+CSS und JavaScript werden mit einem Versionsparameter eingebunden (zum Beispiel `styles.css?v=20261031`). Nach jeder Änderung an CSS oder JavaScript den Wert in index.html, views/*.html, 404.html und styles.css auf das neue Datum setzen, damit Besucher nicht die alte Version aus dem Browser-Cache sehen.
+
+Nicht hochladen: `_archive/`, `.git/`, `.DS_Store`, `README.md`.
 
 ## Live-Website
 
