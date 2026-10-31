@@ -121,6 +121,9 @@
         transform: translateY(-120%);
         opacity: 0;
         visibility: hidden;
+        max-height: calc(100vh - 68px);
+        max-height: calc(100dvh - 68px);
+        overflow-y: auto;
         transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
         z-index: 999;
     }

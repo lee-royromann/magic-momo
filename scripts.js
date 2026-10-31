@@ -82,11 +82,12 @@ function handleMenuToggleClick() {
  * @returns {void}
  */
 function handleDocumentKeydown(event) {
-    if (event.key !== 'Escape') {
+    if (event.key !== 'Escape' || !siteElements.navMenu.classList.contains('active')) {
         return;
     }
 
     setMobileMenuState(false);
+    siteElements.mobileMenuToggle.focus();
 }
 
 /**

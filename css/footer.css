@@ -103,7 +103,8 @@
 
 .footer-credit a {
     color: var(--color-on-dark);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
     transition: color 0.2s ease;
 }
 
