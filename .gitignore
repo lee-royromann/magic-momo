@@ -14,3 +14,5 @@ _archive/
 
 robots.txt
 .htaccess
+# Upload-Ordner (wird mit build-dist.sh erzeugt)
+dist/
