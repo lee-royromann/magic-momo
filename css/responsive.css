@@ -255,12 +255,13 @@
         padding: 112px 0 72px;
     }
 
-    .legal-grid {
-        grid-template-columns: 1fr;
+    .info-rows {
+        gap: 16px;
     }
 
-    .legal-card {
-        padding: 28px 22px;
+    .info-rows .info-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
     }
 
     .back-to-home {
