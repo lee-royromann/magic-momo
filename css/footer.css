@@ -95,19 +95,21 @@
     margin: 0;
 }
 
-.footer-credit {
-    font-size: 0.75rem !important;
-    color: var(--color-on-dark-muted) !important;
-    margin: 0 !important;
+.footer-copyright .footer-credit {
+    font-size: 0.72rem;
+    opacity: 0.75;
 }
 
 .footer-credit a {
-    color: var(--color-on-dark);
+    color: inherit;
     text-decoration: underline;
+    text-decoration-color: rgba(179, 170, 151, 0.4);
+    text-decoration-thickness: 1px;
     text-underline-offset: 3px;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 .footer-credit a:hover {
-    color: var(--color-saffron);
+    color: var(--color-on-dark);
+    text-decoration-color: currentColor;
 }

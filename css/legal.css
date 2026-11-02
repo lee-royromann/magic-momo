@@ -1,4 +1,12 @@
+.legal-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
 .legal-section {
+    flex: 1 0 auto;
     background-color: var(--color-cream);
     padding: 152px 0 104px;
 }
