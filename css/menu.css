@@ -125,7 +125,7 @@
 }
 
 .menu-feature {
-    border: 1.5px solid var(--color-saffron);
+    border: 1px solid rgba(245, 197, 25, 0.64);
     border-radius: var(--radius);
     background-color: var(--color-ink-soft);
     overflow: hidden;
