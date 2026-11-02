@@ -94,10 +94,6 @@
     stroke-width: 2.5;
 }
 
-.hero-badge-dot {
-    fill: var(--color-saffron);
-}
-
 .hero-badge-label {
     font-family: var(--font-body);
     font-size: 16px;
