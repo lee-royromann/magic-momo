@@ -255,6 +255,15 @@
         padding: 112px 0 72px;
     }
 
+    .info-rows {
+        gap: 16px;
+    }
+
+    .info-rows .info-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
     .back-to-home {
         margin-top: 48px;
     }

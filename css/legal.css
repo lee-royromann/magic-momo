@@ -38,10 +38,6 @@
     max-width: 720px;
 }
 
-.legal-content-wide {
-    max-width: none;
-}
-
 .legal-content h2 {
     margin-top: 44px;
 }
@@ -79,15 +75,15 @@
     margin-top: 20px;
 }
 
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px 32px;
+.info-rows {
+    gap: 14px;
 }
 
-.info-grid .legal-address {
-    margin-bottom: 0;
-    line-height: 1.6;
+.info-rows .info-item {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 24px;
+    align-items: baseline;
 }
 
 .info-item {
