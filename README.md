@@ -24,7 +24,7 @@ Die Hauptseite liegt in index.html. styles.css bindet die CSS-Module aus dem Ord
 
 CSS und JavaScript werden mit einem Versionsparameter eingebunden (zum Beispiel `styles.css?v=20261031`). Nach jeder Änderung an CSS oder JavaScript den Wert in index.html, views/*.html, 404.html und styles.css auf das neue Datum setzen, damit Besucher nicht die alte Version aus dem Browser-Cache sehen.
 
-Nicht hochladen: `_archive/`, `.git/`, `.DS_Store`, `README.md`.
+Zum Hochladen im Projektordner `./build-dist.sh` ausführen. Das Skript legt im Ordner `dist/` genau die Dateien für den Webserver ab. Den Inhalt von `dist/` ins Hauptverzeichnis des Webservers laden und dort nichts löschen.
 
 ## Live-Website
 
