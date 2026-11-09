@@ -13,25 +13,6 @@
         width: 50vw;
     }
 
-    .food-gallery {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-padding-left: 24px;
-        margin: 56px -24px 0;
-        padding: 0 24px 8px;
-        scrollbar-width: none;
-    }
-
-    .food-gallery::-webkit-scrollbar {
-        display: none;
-    }
-
-    .food-gallery-item {
-        flex: 0 0 min(42vw, 280px);
-        scroll-snap-align: start;
-    }
-
     .about-intro {
         gap: 56px;
     }
@@ -43,18 +24,9 @@
         grid-template-areas:
             "momo"
             "more"
-            "special"
             "drinks";
         grid-template-rows: none;
         gap: 56px;
-    }
-
-    .menu-category-special .menu-list {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-category-special .menu-item:nth-last-child(2) {
-        border-bottom: 1px solid var(--color-line-dark);
     }
 
     .about-intro,
@@ -205,10 +177,6 @@
         gap: 6px 24px;
     }
 
-    .food-gallery-item {
-        flex-basis: 64vw;
-    }
-
     .contact-section {
         padding-bottom: 150px;
     }
@@ -306,14 +274,6 @@
 
     .section-title {
         font-size: 1.9rem;
-    }
-
-    .food-gallery {
-        margin-left: -16px;
-        margin-right: -16px;
-        padding-left: 16px;
-        padding-right: 16px;
-        scroll-padding-left: 16px;
     }
 
     .contact-card {
