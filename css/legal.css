@@ -25,21 +25,6 @@
     color: var(--color-text-muted);
 }
 
-.legal-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    align-items: start;
-}
-
-.legal-card {
-    padding: 36px 32px;
-    border-radius: var(--radius);
-    background-color: var(--color-paper);
-    box-shadow: 0 14px 30px rgba(20, 19, 15, 0.08);
-}
-
-.legal-card h2,
 .legal-content h2 {
     font-family: var(--font-display);
     font-size: 1.45rem;
@@ -88,6 +73,17 @@
 
 .legal-content .info-list {
     margin-top: 20px;
+}
+
+.info-rows {
+    gap: 14px;
+}
+
+.info-rows .info-item {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 24px;
+    align-items: baseline;
 }
 
 .info-item {
